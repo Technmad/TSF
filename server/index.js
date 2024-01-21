@@ -22,6 +22,6 @@ app.listen(port, () => console.log(`Listening to port ${port}...`));
 
 app.use(
   cors({
-    origin: "https://bookmart-rho.vercel.app/",
+    origin: "https://bookmart-rho.vercel.app",
   })
 );
