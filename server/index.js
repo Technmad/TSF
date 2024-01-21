@@ -22,7 +22,7 @@ app.listen(port, () => console.log(`Listening to port ${port}...`));
 
 app.use(
   cors({
-    origin: "https://bookmart-rho.vercel.app",
+    origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
     optionsSuccessStatus: 204,
