@@ -19,3 +19,9 @@ app.use("/api/payment/", paymentRoutes);
 //app listening
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening to port ${port}...`));
+
+app.use(
+  cors({
+    origin: "https://bookmart-rho.vercel.app/",
+  })
+);
