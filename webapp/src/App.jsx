@@ -23,7 +23,7 @@ function App() {
       handler: async (response) => {
         try {
           const verifyUrl =
-            "https://backend-cuen4ip5e-technmad.vercel.app/api/payment/verify";
+            "https://backend-eight-gray.vercel.app/api/payment/verify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
         } catch (error) {
@@ -41,7 +41,7 @@ function App() {
   const handlePayment = async () => {
     try {
       const orderUrl =
-        "https://backend-cuen4ip5e-technmad.vercel.app/api/payment/orders";
+        "https://backend-eight-gray.vercel.app/api/payment/orders";
       const { data } = await axios.post(orderUrl, { amount: book.price });
       console.log(data);
       initPayment(data.data);
