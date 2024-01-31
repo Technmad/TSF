@@ -14,6 +14,11 @@ app.use(express.json());
 app.use(cors());
 
 //routes
+app.use("/", (req, res) => {
+  // Handle the root path
+  res.send("Hello from the root path!"); // Send a simple response
+});
+
 app.use("/api/payment/", paymentRoutes);
 
 //app listening
